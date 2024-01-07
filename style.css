@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Outfit;
+    src: url(https://fonts.google.com/specimen/Outfit);
+}
+
+:root {
+    /* ## colors ## */
+
+    /* ## Primary ## */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* ## Neutral ## */
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color-scheme: light dark;
+    font-family: Outfit, system-ui;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+main {
+    align-items: center;
+    background: var(--main-BG);
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+    width: 100%;
+}
+
+.card {
+    aspect-ratio: 9/14;
+    background: var(--card-BG);
+    border-radius: 1rem;
+    max-height: 80vh;
+    max-width: 90vw;
+    min-width: 350px;
+    padding: 1.5rem;
+}
+
+.head-img {
+    border-radius: inherit;
+    max-height: 60%;
+    overflow: hidden;
+}
+
+.head-img img {
+    border-radius: inherit;
+    object-fit: cover;
+    width: 100%;
+}
+
+.top > * {
+    display: inline-block;
+    position: relative;
+}
+
+.left {
+    color: var(--Cyan);
+    font-size: 18px;
+    font-weight: 700;
+    min-width: 65%;
+}
+
+.right {
+    color: var(--Soft-blue);
+}
+
+.profile img {
+    border-radius: 100%;
+    border: 2px solid var(--White);
+    margin-right: 10%;
+    max-height: 100%;
+    max-width: 12%;
+    object-fit: cover;
+}
+
+.profile {
+    align-items: center;
+    display: flex;
+
+}
+
+.profile {
+    color: var(--Soft-blue);
+}
+
+.profile span span {
+    color: var(--White);
+}
+
+.bottom > * {
+    padding: 2% 0;
+}
+
+.bottom hr {
+    margin: 2% 0;
+    padding: 0;
+    background-color:var(--line);
+}
+
+p {
+    color: var(--Soft-blue);
+    font-size: 18px;
+}
